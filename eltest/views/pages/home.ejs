@@ -1,4 +1,5 @@
 <%- contentFor('body') %>
+
       <div class="container py-4">
             <header class="pb-3 mb-4 border-bottom">
                 <div class="">
@@ -9,13 +10,13 @@
                 <div class="col-md-6">
                     <div class="h-100 p-5 bg-light border rounded-3">
                         <h2>Temperatura atual:</h2>
-                        <h2 id="teste"><%= temp.temperature %> °C</h2>
+                        <h2 id="temperature"></h2>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="h-100 p-5 bg-light border rounded-3">
                         <h2>Umidade atual:</h2>
-                        <h2><%= temp.humidity %> %</h2>
+                        <h2 id="humidity"></h2>
                     </div>
                 </div>
             </div>
@@ -43,6 +44,8 @@
                 IPFacens, Smart Campus Facens, CEDEPS - 2021
             </footer>
         </div>
+
+        
 
      
 

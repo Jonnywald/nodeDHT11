@@ -33,8 +33,6 @@ console.log(
   }
 }
  
-
-
 app.get('/', (req, res ) => {
     var ht11 = exec();
     console.log(
@@ -45,9 +43,13 @@ app.get('/', (req, res ) => {
 
 });
 
+app.get('/dados', (req, res) => {
+	var ht11 = exec();
+	PostDados();
+	res.send(ht11);	
+});
 
 var leitura = exec();
-
 var request = require('request');
 var options = {
   'method': 'POST',
@@ -61,11 +63,6 @@ var options = {
   })
 
 };
-request(options, function (error, response) {
-  if (error) throw new Error(error);
-  console.log(response.body);
-});
-
 var optionsH = {
   'method': 'POST',
   'url': 'http://15.228.18.41/lma/store',
@@ -78,13 +75,23 @@ var optionsH = {
   })
 
 };
-request(optionsH, function (error, response) {
-  if (error) throw new Error(error);
-  console.log(response.body);
-});
+function PostDados(){
+console.log("passou");
+	request(options, function (error, response) {
+		if (error) throw new Error(error);
+		console.log(response.body);
+	});
+
+	request(optionsH, function (error, response) {
+		if (error) throw new Error(error);
+		console.log(response.body);
+	});
+}
+
 
 var httpServer = http.createServer(app );
 httpServer.listen(8080);
+
 
 
 
