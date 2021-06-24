@@ -1,0 +1,48 @@
+<%- contentFor('body') %>
+
+<script src="/js/login.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/css/login.css">
+
+<body>
+  <div class="modal loginform">
+    <h2>
+      <div class="imgcontainer">
+        Log-in to your account
+      </div>
+    </h2>
+    <div class="innermodal">
+      <div class="ui left icon input fluid">
+        <input type="text" id="email" placeholder="Username...">
+        <i class="users icon"></i>
+      </div>
+      <div class="ui left icon input fluid linespace">
+        <input type="password" id="password" placeholder="password...">
+        <i class="lock icon"></i>
+      </div>
+      <input type="button" value="Login" id="logbut" class="ui blue button fluid" style="padding: 1em 1em 1em 0; margin: 1em 1em 0 0;">
+    </div>
+  </div>
+  <div class="modal">
+    <div class="ui error message" style="border-radius: 10px;"><%=mensagem %></div>
+  </div>
+</body>
+
+
+<!--   
+<div class="input-group">
+    <div class="input-group-prepend">
+        <div class="input-group-text">Login</div>
+    </div>
+    <input type="text" id='login' class="form-control"   placeholder="username" >
+</div>
+<div class="input-group">
+    <div class="input-group-prepend">
+        <div class="input-group-text">Password</div>
+    </div>
+    <input type="password" id='pwd' class="form-control"   placeholder="password" >
+</div>
+<button type="button" id='btnSave' class="btn btn-success">Login</button>
+<button type="button" id='btnteste' class="btn btn-success">teste</button>
+<span id='mensagem'><%= mensagem %></span>
+<span id='token'></span> -->

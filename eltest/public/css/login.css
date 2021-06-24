@@ -1,0 +1,34 @@
+
+.loginform{
+  background: linear-gradient(#3b5998, #000030);
+  border-radius: 10px;
+}
+
+.linespace{
+  margin-top: 0.5em;
+}
+
+.innermodal{
+  width: 80%;
+  margin: 5px auto;
+}
+
+.modal{
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 0px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+  z-index: 1;
+  padding-bottom: 1em;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  color: white;
+}
+
+.img.avatar {
+  width: 10%;
+  border-radius: 50%;
+}

@@ -1,0 +1,106 @@
+body{
+	background: black;
+}
+
+/*********************/
+/* Logotipo e titulo */
+/*********************/
+.logo{
+	width: 80px;
+	height: auto;
+	float: left; 
+	padding-top: 2px;
+}
+
+p.title {
+	padding-top: 1vh;
+	color: cyan;
+	font-size: 30px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+}
+.mainscreen{
+	position: -webkit-sticky;
+	position: -moz-sticky;
+	position: -ms-sticky;
+	position: -o-stocky;
+	position: relative;
+	height: 8vh;
+}
+
+.header{
+	position: sticky;
+	top: 0;
+	background-color: #404040;
+	height: 8vh;
+}
+
+.footer{
+	height: 8vh;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	background: #404040;
+	font-size: 14px;
+	color:  #BBB;
+	text-align: center;
+	width: 100%;
+}
+.footertext{
+	padding-top: 5px;
+}
+
+.container-fluid.main{
+	height: 82vh;
+	overflow-y:auto;
+}
+/*
+body{
+	display:flex; 
+	flex-direction:column; 
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: #111; 
+}
+
+header{
+	position: relative;
+	height: 10vh;
+	z-index: 1;
+	text-align: center;
+	background: #222;
+	color:  #fff;
+	font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+footer{
+	position: sticky;
+	margin-bottom: auto;
+	height: 7vh;
+	font-size: 14px;
+	color:  #BBB;
+	background: #222;
+	text-align: center;
+	width: 100%;
+}
+.footerspam{
+	font-size: 14px;
+}
+.container-fluid.main{
+	
+	overflow-y: auto;
+}
+*/
+
+/********************/
+/* CORES do sistema */
+/********************/
+.normalTime{
+    color: cyan;
+}
+.warningTime{
+    color: yellow;
+}
+.AlertTime{
+    color: tomato;
+}

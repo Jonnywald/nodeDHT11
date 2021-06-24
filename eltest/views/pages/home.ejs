@@ -1,0 +1,48 @@
+<%- contentFor('body') %>
+      <div class="container py-4">
+            <header class="pb-3 mb-4 border-bottom">
+                <div class="">
+                    <h1>Monitoramento de temperatura e umidade 5G</h1>
+                </div>
+            </header>
+            <div class="row align-items-md-stretch">
+                <div class="col-md-6">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2>Temperatura atual:</h2>
+                        <h2 id="teste"><%= temp.temperature %> °C</h2>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="h-100 p-5 bg-light border rounded-3">
+                        <h2>Umidade atual:</h2>
+                        <h2><%= temp.humidity %> %</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col text-center">
+                        <button type="button" onClick="window.location.reload" class="btn btn-light">Atualizar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-4">
+                <div class="row align-items-md-stretch">
+                    <div class="col-md-4 bg-light border rounded-3">
+                        <img src="img/cedeps.png" class="img-fluid" alt="CEDEPS">
+                    </div>
+                    <div class="col-md-4 bg-light border rounded-3">
+                        <img src="img/smart.png" class="img-fluid smart" alt="SMART">
+                    </div>
+                    <div class="col-md-4 bg-light border rounded-3">
+                        <img src="img/IPF.png" class="img-fluid" alt="IPFACENS">
+                    </div>
+                </div>
+            </div>
+            <footer class="pt-3 mt-4 text-muted border-top">
+                IPFacens, Smart Campus Facens, CEDEPS - 2021
+            </footer>
+        </div>
+
+     
+
